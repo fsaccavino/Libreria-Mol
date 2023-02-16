@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 62.5%;
+}
+body{
+  background-image: url(https://static.vecteezy.com/system/resources/previews/001/884/507/large_2x/abstract-green-water-color-background-illustration-texture-for-design-free-photo.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* header */
+header {
+  background: #CAF7E3;
+  border-bottom: solid 4px #82dfce;
+  height: 13rem;
+}
+.logo {
+  margin-left: 4rem;
+  position: absolute;
+}
+header nav {
+  float: right;
+  margin-top: 3rem;
+}
+.menu li {
+  float: left;
+  list-style-type: none;
+  padding: 2rem;
+}
+.menu li a {
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: bold;
+  color: black;
+  font-family: "satoshi",
+  sans-serif;
+}
+
+
+/* main */
+
+.descripcion h1 {
+  font-size: 10rem;
+  text-align: center;   
+  font-family: "Caveat", cursive; 
+}
+.descripcion p{
+  font-size: 5rem;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+}
+.rubro h1{
+  font-size: 7rem;
+  text-align: center;   
+  font-family: "Caveat", cursive;
+}
+.rubro p{
+  font-size: 2rem;
+  text-align: left;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+}
+article div img{
+  border-top: groove 3px #82dfce;
+  border-bottom: groove 3px #82dfce;
+  border-left: groove 3px #82dfce;
+  border-right: groove 3px #82dfce;  
+}
+
+.img-portada{
+  text-align: center;
+}
+
+/* footer */
+footer {
+  background: #CAF7E3;
+  height: 30rem;
+  border-top: solid 4px #82dfce;
+}
+
+.redesSociales li{
+  float: left;
+  list-style-type: none;
+  padding: 1rem;
+  margin-top: 10rem;
+  margin-left: 20rem; 
+}
+
+footer iframe {
+  float: right;  
+}
