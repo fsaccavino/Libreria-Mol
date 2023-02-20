@@ -14,28 +14,25 @@ body{
 header {
   background: #CAF7E3;
   border-bottom: solid 4px #82dfce;
-  height: 13rem;
 }
-.logo {
-  margin-left: 4rem;
-  position: absolute;
+
+#navbarNav{
+  justify-content: space-evenly;
 }
-header nav {
-  float: right;
-  margin-top: 3rem;
-}
-.menu li {
-  float: left;
-  list-style-type: none;
-  padding: 2rem;
-}
-.menu li a {
-  text-decoration: none;
+.navbar-nav{  
+  display: flex;
+  list-style: none;
   font-size: 2rem;
-  font-weight: bold;
+  font-family: "Comic Sans MS",
+  sans-serif;  
+}
+.nav-item{
+  margin: 2rem;
+ }
+.nav-item a{
+  text-decoration: none;
   color: black;
-  font-family: "satoshi",
-  sans-serif;
+  font-weight: bold;
 }
 
 
