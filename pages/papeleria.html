@@ -18,107 +18,223 @@
       href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
       rel="stylesheet"
     />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"    rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"     crossorigin="anonymous"/>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="../css/styles.css" />
   </head>
 
   <body>
-    <header>
-      <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid"> 
-          <a class="navbar-brand">
-            <img src="../img/logo.png" alt="logo"/>
-          </a>                            
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link" href="../index.html">Inicio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./articulos-escolares.html">Artículos Escolares</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./articulos-de-oficina.html">Artículos de Oficina</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./papeleria.html">Papelería</a>
-              </li>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./contacto.html">Contacto</a>
-            </li>
-            </ul>
+    <div id="grid-container">
+      <header>
+        <nav class="navbar navbar-expand-lg">
+          <div class="container-fluid">
+            <a class="navbar-brand">
+              <img src="../img/logo.png" alt="logo" />
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="../index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./articulos-escolares.html"
+                    >Artículos Escolares</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./articulos-de-oficina.html"
+                    >Artículos de Oficina</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./papeleria.html">Papelería</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./contacto.html">Contacto</a>
+                </li>
+              </ul>
+            </div>
           </div>
-        </div>
-      </nav>
-    </header>
-    <main class="rubro">
-      <h1>Papelería</h1>
+        </nav>
+      </header>
+      <main class="rubro">
+        <h1>Papelería</h1>
 
-      <article>
-        <div class="product-wrapper">
-          <div class="product-img">
-            <img src="../img/resma autor a4.png" alt="resma autor a4" />
-          </div>
-          <p>RESMA AUTOR 70GRS.21X29,7 A4 $ 1.690</p>
-        </div>
-        <div class="product-wrapper">
-          <div class="product-img">
-            <img src="../img/resma autor oficio.png" alt="resma autor oficio" />
-          </div>
-          <p>RESMA AUTOR 75GRS.21,59X35,56 OF.LEGAL $ 1.990</p>
-        </div>
-        <div class="product-wrapper">
-          <div class="product-img">
-            <img src="../img/resma boreal a4.png" alt="resma boreal a4" />
-          </div>
-          <p>RESMA BOREAL 75GRS.21X29,7 A4 $ 1.650</p>
-        </div>
-        <div class="product-wrapper">
-          <div class="product-img">
-            <img
-              src="../img/resma boreal oficio.png"
-              alt="resma boreal oficio"
-            />
-          </div>
-          <p>RESMA BOREAL 70GRS.22X34 OFICIO $ 1.800</p>
-        </div>
-      </article>
-    </main>
+        <section>
+          <article class="product-paper">
+            <div class="product-wrapper">
+              <div class="product-img">
+                <img src="../img/resma autor a4.png" alt="resma autor a4" />
+              </div>
+              <p>RESMA AUTOR 70GRS.21X29,7 A4 $ 1.690</p>
+            </div>
+            <div class="product-wrapper">
+              <div class="product-img">
+                <img
+                  src="../img/resma autor oficio.png"
+                  alt="resma autor oficio"
+                />
+              </div>
+              <p>RESMA AUTOR 75GRS.21,59X35,56 OF.LEGAL $ 1.990</p>
+            </div>
+            <div class="product-wrapper">
+              <div class="product-img">
+                <img src="../img/resma boreal a4.png" alt="resma boreal a4" />
+              </div>
+              <p>RESMA BOREAL 75GRS.21X29,7 A4 $ 1.650</p>
+            </div>
+          </article>
+          
+          <article class="product-paper">
+            <div class="product-wrapper">
+              <div class="product-img">
+                <img
+                  src="../img/resma boreal oficio.png"
+                  alt="resma boreal oficio"
+                />
+              </div>
+              <p>RESMA BOREAL 70GRS.22X34 OFICIO $ 1.800</p>
+            </div>
+            <div class="product-wrapper">
+              <div class="product-img">
+                <img
+                  src="../img/resma pampa 70grs.png"
+                  alt="resma pampa 70grs"
+                />
+              </div>
+              <p>RESMA PAMPA 70GRS.21X29,7 A4 $ 1.690</p>
+            </div>
+            <div class="product-wrapper">
+              <div class="product-img">
+                <img
+                  src="../img/resma pampa 75grs.png"
+                  alt="resma pampa 75grs"
+                />
+              </div>
+              <p>RESMA PAMPA 75GRS.21X29,7 A4 $ 1.790</p>
+            </div>
+          </article>
+        </section>
 
-    <footer class="footer">
-      <ul class="redesSociales">
-        <li>
-          <a href="https://www.instagram.com/libreria.mol/"
-            ><i
-              class="fa fa-instagram"
-              style="font-size: 60px; color: black"
-            ></i
-          ></a>
-        </li>
-        <li>
-          <a href="https://www.facebook.com/libreria.mol/"
-            ><i
-              class="fa fa-facebook-square"
-              style="font-size: 60px; color: black"
-            ></i
-          ></a>
-        </li>
-      </ul>
 
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3346.4853710963666!2d-60.67347071303814!3d-32.990976793536134!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b7ab4839132a95%3A0xdcbedb43479ac8c2!2sLibreria%20Mol!5e0!3m2!1ses!2sar!4v1674429442539!5m2!1ses!2sar"
-        width="400"
-        height="300"
-        style="border: 0"
-        allowfullscreen=""
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
-      ></iframe>
-    </footer>
+          <!-- <article class="global-product">
+            <div class="product-wrapper">
+              <div class="product-img">
+                <img src="../img/resma autor a4.png" alt="resma autor a4" />
+              </div>
+              <p>RESMA AUTOR 70GRS.21X29,7 A4 $ 1.690</p>
+            </div>
+            <div class="product-wrapper">
+              <div class="product-img">
+                <img
+                  src="../img/resma autor oficio.png"
+                  alt="resma autor oficio"
+                />
+              </div>
+              <p>RESMA AUTOR 75GRS.21,59X35,56 OF.LEGAL $ 1.990</p>
+            </div>
+          </article>
+          
+          <article class="global-product">
+            <div class="product-wrapper">
+              <div class="product-img">
+                <img src="../img/resma boreal a4.png" alt="resma boreal a4" />
+              </div>
+              <p>RESMA BOREAL 75GRS.21X29,7 A4 $ 1.650</p>
+            </div>
+            <div class="product-wrapper">
+              <div class="product-img">
+                <img
+                  src="../img/resma boreal oficio.png"
+                  alt="resma boreal oficio"
+                />
+              </div>
+              <p>RESMA BOREAL 70GRS.22X34 OFICIO $ 1.800</p>
+            </div>
+          </article>
+        </section> -->
+
+
+        <!-- <article>
+          <div class="product-wrapper">
+            <div class="product-img">
+              <img src="../img/resma autor a4.png" alt="resma autor a4" />
+            </div>
+            <p>RESMA AUTOR 70GRS.21X29,7 A4 $ 1.690</p>
+          </div>
+          <div class="product-wrapper">
+            <div class="product-img">
+              <img
+                src="../img/resma autor oficio.png"
+                alt="resma autor oficio"
+              />
+            </div>
+            <p>RESMA AUTOR 75GRS.21,59X35,56 OF.LEGAL $ 1.990</p>
+          </div>
+          <div class="product-wrapper">
+            <div class="product-img">
+              <img src="../img/resma boreal a4.png" alt="resma boreal a4" />
+            </div>
+            <p>RESMA BOREAL 75GRS.21X29,7 A4 $ 1.650</p>
+          </div>
+          <div class="product-wrapper">
+            <div class="product-img">
+              <img
+                src="../img/resma boreal oficio.png"
+                alt="resma boreal oficio"
+              />
+            </div>
+            <p>RESMA BOREAL 70GRS.22X34 OFICIO $ 1.800</p>
+          </div>
+        </article> -->
+      </main>
+
+      <footer class="footer">
+        <ul class="redesSociales">
+          <li>
+            <a href="https://www.instagram.com/libreria.mol/"
+              ><i
+                class="fa fa-instagram"
+                style="font-size: 60px; color: black"
+              ></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/libreria.mol/"
+              ><i
+                class="fa fa-facebook-square"
+                style="font-size: 60px; color: black"
+              ></i
+            ></a>
+          </li>
+        </ul>
+
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3346.4853710963666!2d-60.67347071303814!3d-32.990976793536134!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b7ab4839132a95%3A0xdcbedb43479ac8c2!2sLibreria%20Mol!5e0!3m2!1ses!2sar!4v1674429442539!5m2!1ses!2sar"
+          width="400"
+          height="300"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </footer>
+    </div>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
