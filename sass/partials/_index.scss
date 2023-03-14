@@ -1,0 +1,156 @@
+@use "variables";
+@mixin tamanos($ancho, $alto) {
+  width: $ancho;
+  height: $alto;
+}
+// reset general
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+// estilos aplicados a todas las paginas
+html {
+  font-size: 62.5%;
+}
+header {
+  grid-area: header;
+  background: #caf7e3;
+  border-bottom: solid 4px #82dfce;
+}
+main {
+  background-image: url(https://static.vecteezy.com/system/resources/previews/001/884/507/large_2x/abstract-green-water-color-background-illustration-texture-for-design-free-photo.jpg);
+  background-size: cover;
+  grid-area: main;
+}
+footer {
+  grid-area: footer;
+  background: #caf7e3;
+  border-top: solid 4px #82dfce;
+}
+#grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+}
+// estilos aplicados a navbar de todas las paginas
+nav {
+  .container-fluid {
+    a {
+      img {
+        height: 80px;
+      }
+    }
+  }
+}
+#navbarNav {
+  justify-content: space-evenly;
+  .navbar-nav {
+    display: flex;
+    list-style: none;
+    font-size: 1.4rem;
+    font-family: variables.$font-navbar;
+    .nav-item {
+      text-decoration: none;
+      color: black;
+      font-weight: bold;
+    }
+  }
+}
+// estilos aplicados al footer de todas las paginas
+footer {
+  ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    li {
+      list-style-type: none;
+      padding: 2rem;
+    }
+  }
+  iframe {
+    @include tamanos(100%, 100%);
+  }
+}
+
+// estilos aplicados al index
+.descripcion {
+  h1 {
+    font-family: variables.$title-font;
+    padding: 2rem;
+    font-size: variables.$size-title;
+    text-align: center;
+  }
+  p {
+    font-family: variables.$subtitle-font;
+    font-size: 2rem;
+    text-align: center;
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+}
+.carousel-wrapper {
+  display: flex;
+  justify-content: center;
+  .carousel-inner {
+    width: 35rem;
+    padding: 2rem;
+  }
+}
+
+// DESKTOP
+@media screen and (min-width: 1024px) {
+  nav {
+    .container-fluid {
+      a {
+        img {
+          height: 125px;
+        }
+      }
+    }
+    #navbarNav {
+      .navbar-nav {
+        font-size: 2rem;
+        .nav-item {
+          margin: 2rem;
+        }
+      }
+    }
+  }
+
+  .descripcion {
+    h1 {
+      font-size: variables.$size-title--desktop;
+    }
+    p {
+      font-size: 5rem;
+    }
+  }
+  main {
+    #carouselExampleSlidesOnly {
+      .carousel-inner {
+        width: 100rem;
+        margin-bottom: 2rem;
+      }
+    }
+  }
+  footer {
+    ul {
+      position: absolute;
+      margin-left: 18%;
+      margin-top: 7%;
+      li {
+        a {
+          padding: 4rem;
+        }
+      }
+    }
+    iframe {
+      float: right;
+      @include tamanos(40rem, 30rem);
+    }
+  }
+}

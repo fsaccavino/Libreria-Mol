@@ -1,0 +1,77 @@
+@use "variables";
+
+.contact {
+  h1 {
+    font-family: variables.$title-font;
+    padding: 1rem;
+    font-size: variables.$size-title;
+    text-align: center;
+  }
+  p {
+    font-family: variables.$subtitle-font;
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 1rem;
+    font-weight: bold;
+  }
+}
+form {
+  width: 200px;
+  margin: auto;
+  input {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 5px;
+    box-sizing: border-box;
+    font-size: 10px;
+    border: none;
+    #boton {
+      color: white;
+      font-size: large;
+      font-weight: bold;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+  textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 5px;
+    box-sizing: border-box;
+    font-size: 10px;
+    border: none;
+    min-height: 80px;
+    max-height: 150px;
+    max-width: 100%;
+  }
+}
+
+// DESKTOP
+@media screen and (min-width: 1024px) {
+  .contact {
+    h1 {
+      font-size: 8rem;
+    }
+    p {
+      font-size: 2rem;
+    }
+  }
+  form {
+    width: 400px;
+    padding: 25px;
+    input {
+      margin-bottom: 15px;
+      font-size: 15px;
+    }
+    #boton {
+      font-size: 20px;
+    }
+    textarea {
+      margin-bottom: 15px;
+      font-size: 15px;
+      min-height: 100px;
+      max-height: 200px;
+    }
+  }
+}

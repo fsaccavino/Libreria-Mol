@@ -1,0 +1,63 @@
+@use "variables";
+
+// estilos aplicados a los articulos de escolares, de oficina y papeleria
+
+.rubro {
+  h1 {
+    font-family: variables.$title-font;
+    padding: 2rem;
+    font-size: variables.$size-title;
+    text-align: center;
+  }
+  p {
+    font-family: variables.$subtitle-font;
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 1rem;
+    font-weight: bold;
+  }
+}
+section {
+  article {
+    div {
+      text-align: center;
+      margin-bottom: 10px;
+      img {
+        height: 20rem;
+        border-top: groove 3px #82dfce;
+        border-bottom: groove 3px #82dfce;
+        border-left: groove 3px #82dfce;
+        border-right: groove 3px #82dfce;
+      }
+    }
+  }
+}
+
+// DESKTOP
+@media screen and (min-width: 1024px) {
+  .rubro {
+    h1 {
+      font-size: 8rem;
+    }
+    p {
+      font-size: 2rem;
+    }
+  }
+  section {
+    article {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      div {
+        margin-top: 10px;
+        margin-bottom: 35px;
+        img {
+          height: 30rem;
+        }
+        .scale-img:hover {
+          transform: scale(1.1, 1.1);
+          transition: 0.7s;
+        }
+      }
+    }
+  }
+}
