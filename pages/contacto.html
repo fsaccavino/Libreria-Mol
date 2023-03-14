@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="descripcion" content="Comprá productos de librería de primera línea y al mejor precio">
+    <meta name="keywords" content="libreria, descuentos, promociones, contacto, comunicacion">
     <title>Contacto</title>
     <link rel="shortcut icon" href="../img/favicon.png" />
     <link
@@ -24,6 +26,7 @@
       integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
       crossorigin="anonymous"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="../css/styles.css" />
   </head>
   <body>
@@ -71,9 +74,15 @@
           </div>
         </nav>
       </header>
-      <main class="rubro">
-        <h1>Formulario de Contacto</h1>
-        <p>
+      <main class="contact">
+        <h1 data-aos="fade-down" data-aos-duration="800">
+          Formulario de Contacto
+        </h1>
+        <p
+          data-aos="flip-right"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="1800"
+        >
           Déjenos su consulta o sugerencia y nos contactaremos a la brevedad.
           Muchas gracias!
         </p>
@@ -119,7 +128,10 @@
         ></iframe>
       </footer>
     </div>
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"

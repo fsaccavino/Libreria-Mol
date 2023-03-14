@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="descripcion" content="Comprá productos de librería de primera línea y al mejor precio">
+    <meta name="keywords" content="libreria, descuentos, promociones, escuela, escolar, clases">
     <title>Artículos Escolares</title>
     <link rel="shortcut icon" href="../img/favicon.png" />
     <link
@@ -24,6 +26,7 @@
       integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
       crossorigin="anonymous"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="../css/styles.css" />
   </head>
   <body>
@@ -73,44 +76,70 @@
       </header>
 
       <main class="rubro">
-        <h1>Artículos Escolares</h1>
+        <h1 data-aos="fade-down" data-aos-duration="800">
+          Artículos Escolares
+        </h1>
 
         <section>
           <article class="product">
-            <div class="product-wrapper">
-              <div class="product-img">
+            <div
+              class="product-wrapper"
+              data-aos="fade-down"
+              data-aos-delay="300"
+            >
+              <div class="scale-img">
                 <img src="../img/birome bic.png" alt="birome fina" />
               </div>
               <p>BOLIGRAFO BIC CRISTAL PRECISION FINA 0,8MM.AZUL $ 180</p>
             </div>
-            <div class="product-wrapper">
-              <div class="product-img">
+            <div
+              class="product-wrapper"
+              data-aos="fade-down"
+              data-aos-delay="300"
+            >
+              <div class="scale-img">
                 <img src="../img/birome.png" alt="birome" />
               </div>
               <p>BOLIGRAFO BIC CRISTAL DURA + 1MM.AZUL $ 150</p>
             </div>
-            <div class="product-wrapper">
-              <div class="product-img">
+            <div
+              class="product-wrapper"
+              data-aos="fade-down"
+              data-aos-delay="300"
+            >
+              <div class="scale-img">
                 <img src="../img/corrector.png" alt="corrector" />
               </div>
               <p>CORRECTOR LAPIZ TALBOT 7ML. $ 220</p>
             </div>
           </article>
           <article class="product">
-            <div class="product-wrapper">
-              <div class="product-img">
+            <div
+              class="product-wrapper"
+              data-aos="fade-down"
+              data-aos-delay="300"
+            >
+              <div class="scale-img">
                 <img src="../img/lapiz.png" alt="lapiz" />
               </div>
               <p>LAPIZ GRAFITO BIC EVOLUTION HB $ 90</p>
             </div>
-            <div class="product-wrapper">
-              <div class="product-img">
+            <div
+              class="product-wrapper"
+              data-aos="fade-down"
+              data-aos-delay="300"
+            >
+              <div class="scale-img">
                 <img src="../img/sacapuntas.png" alt="sacapuntas" />
               </div>
               <p>SACAPUNTA MAPED METAL ECO CLASSIC 1 FILO $ 170</p>
             </div>
-            <div class="product-wrapper">
-              <div class="product-img">
+            <div
+              class="product-wrapper"
+              data-aos="fade-down"
+              data-aos-delay="300"
+            >
+              <div class="scale-img">
                 <img src="../img/voligoma.png" alt="imagen de voligoma" />
               </div>
               <p>ADHESIVO VOLIGOMA X 30ML. $ 210</p>
@@ -118,16 +147,24 @@
           </article>
 
           <article class="product">
-            <div class="product-wrapper">
-              <div class="product-img">
+            <div
+              class="product-wrapper"
+              data-aos="fade-down"
+              data-aos-delay="300"
+            >
+              <div class="scale-img">
                 <img src="../img/cuaderno azul.png" alt="cuaderno azul" />
               </div>
               <p>
                 CUADERNO T/DURA RIVADAVIA ABC 19X23,5 AZUL X 50 RAY. $ 1.290
               </p>
             </div>
-            <div class="product-wrapper">
-              <div class="product-img">
+            <div
+              class="product-wrapper"
+              data-aos="fade-down"
+              data-aos-delay="300"
+            >
+              <div class="scale-img">
                 <img
                   src="../img/cuaderno amarillo.png"
                   alt="cuaderno amarillo"
@@ -137,8 +174,12 @@
                 CUADERNO T/DURA RIVADAVIA ABC 19X23,5 AMARILLO X 50 RAY. $ 1.290
               </p>
             </div>
-            <div class="product-wrapper">
-              <div class="product-img">
+            <div
+              class="product-wrapper"
+              data-aos="fade-down"
+              data-aos-delay="300"
+            >
+              <div class="scale-img">
                 <img src="../img/cuaderno verde.png" alt="cuaderno verde" />
               </div>
               <p>CUADERNO ABC C/ESPIRAL 21,7 FORRADO X 60 RAY.VERDE $ 1.650</p>
@@ -178,7 +219,10 @@
         ></iframe>
       </footer>
     </div>
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"

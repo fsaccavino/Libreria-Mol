@@ -3,19 +3,23 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 html {
   font-size: 62.5%;
 }
+
 header {
   grid-area: header;
   background: #caf7e3;
   border-bottom: solid 4px #82dfce;
 }
+
 main {
   background-image: url(https://static.vecteezy.com/system/resources/previews/001/884/507/large_2x/abstract-green-water-color-background-illustration-texture-for-design-free-photo.jpg);
   background-size: cover;
   grid-area: main;
 }
+
 footer {
   grid-area: footer;
   background: #caf7e3;
@@ -25,102 +29,26 @@ footer {
 #grid-container {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-areas:
-    "header"
-    "main"
-    "footer";
+  grid-template-areas: "header" "main" "footer";
 }
 
-.container-fluid a img {
+nav .container-fluid a img {
   height: 80px;
 }
+
 #navbarNav {
   justify-content: space-evenly;
 }
-.navbar-nav {
+#navbarNav .navbar-nav {
   display: flex;
   list-style: none;
   font-size: 1.4rem;
   font-family: "Comic Sans MS", sans-serif;
 }
-
-.nav-item a {
+#navbarNav .navbar-nav .nav-item {
   text-decoration: none;
   color: black;
   font-weight: bold;
-}
-
-.descripcion h1 {
-  padding: 2rem;
-  font-size: 5rem;
-  text-align: center;
-  font-family: "Caveat", cursive;
-}
-.descripcion p {
-  font-size: 2rem;
-  text-align: center;
-  margin-left: 2rem;
-  margin-right: 2rem;
-  font-family: "Roboto", sans-serif;
-}
-.carousel-wrapper {
-  display: flex;
-  justify-content: center;
-}
-.carousel-inner {
-  width: 38rem;
-  padding: 2rem;
-}
-
-.rubro h1 {
-  padding: 2rem;
-  font-size: 4rem;
-  text-align: center;
-  font-family: "Caveat", cursive;
-}
-.rubro p {
-  font-size: 1.2rem;
-  text-align: center;
-  padding: 1rem;
-  font-family: "Roboto", sans-serif;
-  font-weight: bold;
-}
-section article div {
-  text-align: center;
-}
-section article div img {
-  height: 20rem;
-  border-top: groove 3px #82dfce;
-  border-bottom: groove 3px #82dfce;
-  border-left: groove 3px #82dfce;
-  border-right: groove 3px #82dfce;
-}
-form {
-  width: 200px;
-  margin: auto;
-}
-input,
-textarea {
-  width: 100%;
-  margin-bottom: 10px;
-  padding: 5px;
-  box-sizing: border-box;
-  font-size: 10px;
-  border: none;
-}
-textarea {
-  min-height: 80px;
-  max-height: 150px;
-  max-width: 100%;
-}
-#boton {
-  color: white;
-  font-size: large;
-  font-weight: bold;
-  padding: 5px;
-}
-#boton:hover {
-  cursor: pointer;
 }
 
 footer ul {
@@ -137,15 +65,37 @@ footer iframe {
   height: 100%;
 }
 
-/* DESKTOP */
+.descripcion h1 {
+  font-family: "Caveat", cursive;
+  padding: 2rem;
+  font-size: 5rem;
+  text-align: center;
+}
+.descripcion p {
+  font-family: "Roboto", sans-serif;
+  font-size: 2rem;
+  text-align: center;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.carousel-wrapper {
+  display: flex;
+  justify-content: center;
+}
+.carousel-wrapper .carousel-inner {
+  width: 35rem;
+  padding: 2rem;
+}
+
 @media screen and (min-width: 1024px) {
-  .container-fluid a img {
+  nav .container-fluid a img {
     height: 125px;
   }
-  .navbar-nav {
+  nav #navbarNav .navbar-nav {
     font-size: 2rem;
   }
-  .nav-item {
+  nav #navbarNav .navbar-nav .nav-item {
     margin: 2rem;
   }
   .descripcion h1 {
@@ -154,34 +104,10 @@ footer iframe {
   .descripcion p {
     font-size: 5rem;
   }
-  .carousel-inner {
-    width: 60rem;
+  main #carouselExampleSlidesOnly .carousel-inner {
+    width: 100rem;
     margin-bottom: 2rem;
   }
-
-  .rubro h1 {
-    font-size: 8rem;
-  }
-  .rubro p {
-    font-size: 2rem;
-  }
-  section article div img {
-    height: 30rem;
-  }
-  form {
-    width: 400px;
-    padding: 25px;
-  }
-  input,
-  textarea {
-    margin-bottom: 15px;
-    font-size: 15px;
-  }
-  textarea {
-    min-height: 100px;
-    max-height: 200px;
-  }
-
   footer ul {
     position: absolute;
     margin-left: 18%;
@@ -190,15 +116,131 @@ footer iframe {
   footer ul li a {
     padding: 4rem;
   }
-
   footer iframe {
-    height: 30rem;
-    width: 40rem;
     float: right;
+    width: 40rem;
+    height: 30rem;
   }
+}
+.rubro h1 {
+  font-family: "Caveat", cursive;
+  padding: 2rem;
+  font-size: 5rem;
+  text-align: center;
+}
+.rubro p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2rem;
+  text-align: center;
+  padding: 1rem;
+  font-weight: bold;
+}
 
-  .product {
+section article div {
+  text-align: center;
+  margin-bottom: 10px;
+}
+section article div img {
+  height: 20rem;
+  border-top: groove 3px #82dfce;
+  border-bottom: groove 3px #82dfce;
+  border-left: groove 3px #82dfce;
+  border-right: groove 3px #82dfce;
+}
+
+@media screen and (min-width: 1024px) {
+  .rubro h1 {
+    font-size: 8rem;
+  }
+  .rubro p {
+    font-size: 2rem;
+  }
+  section article {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
   }
+  section article div {
+    margin-top: 10px;
+    margin-bottom: 35px;
+  }
+  section article div img {
+    height: 30rem;
+  }
+  section article div .scale-img:hover {
+    transform: scale(1.1, 1.1);
+    transition: 0.7s;
+  }
 }
+.contact h1 {
+  font-family: "Caveat", cursive;
+  padding: 1rem;
+  font-size: 5rem;
+  text-align: center;
+}
+.contact p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2rem;
+  text-align: center;
+  padding: 1rem;
+  font-weight: bold;
+}
+
+form {
+  width: 200px;
+  margin: auto;
+}
+form input {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 5px;
+  box-sizing: border-box;
+  font-size: 10px;
+  border: none;
+}
+form input #boton {
+  color: white;
+  font-size: large;
+  font-weight: bold;
+}
+form input #boton:hover {
+  cursor: pointer;
+}
+form textarea {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 5px;
+  box-sizing: border-box;
+  font-size: 10px;
+  border: none;
+  min-height: 80px;
+  max-height: 150px;
+  max-width: 100%;
+}
+
+@media screen and (min-width: 1024px) {
+  .contact h1 {
+    font-size: 8rem;
+  }
+  .contact p {
+    font-size: 2rem;
+  }
+  form {
+    width: 400px;
+    padding: 25px;
+  }
+  form input {
+    margin-bottom: 15px;
+    font-size: 15px;
+  }
+  form #boton {
+    font-size: 20px;
+  }
+  form textarea {
+    margin-bottom: 15px;
+    font-size: 15px;
+    min-height: 100px;
+    max-height: 200px;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
